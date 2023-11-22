@@ -1,12 +1,14 @@
-import Image from 'next/image'
-import Navbar from './components/Navbar'
-import Tugas from './components/Tugas'
+// 'use client'
+import Navbar from "./components/Navbar"
+import Siswa from "./components/Siswa"
+import Tugas from "./components/Tugas"
 
 export default function Home() {
   return (
-    <>
-    <Navbar/>
-    <Tugas/>
-    </>
+    <div className="w-[90%] mx-auto">
+      <Navbar />
+      <Tugas/>
+      <Siswa/>
+    </div>
   )
 }

@@ -40,4 +40,3 @@ function Tugas() {
 }
 
 export default Tugas
-
