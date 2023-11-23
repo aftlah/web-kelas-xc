@@ -9,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Tugas/>
       <Siswa/>
+      
       <form className="max-w-sm mx-auto">
   <div className="mb-5">
     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
