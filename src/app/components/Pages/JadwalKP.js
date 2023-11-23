@@ -3,7 +3,7 @@ import React from 'react'
 const JadwalKP = () => {
     return (
         <>
-            <h1 className='mt-10 px-1 font-black text-secondary text-xl'>KELAS PENGGANTI</h1>
+            <h1 className='mt-12 px-1 font-black text-secondary text-xl'>KELAS PENGGANTI</h1>
             <div className="bg-secondary rounded-xl mt-3 p-4">
                 <div className='text-white text-lg font-bold text-center'>Tidak Ada Kelas Pengganti</div>
             </div>

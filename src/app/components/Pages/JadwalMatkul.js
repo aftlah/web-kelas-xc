@@ -10,10 +10,6 @@ const JadwalMatkul = () => {
             <JadwalCard matkul="Andal" waktu="10.40 - Selesai" ruangan="4.3.3"/>
             <JadwalCard matkul="Andal" waktu="10.40 - Selesai" ruangan="4.3.3"/>
             <JadwalCard matkul="Andal" waktu="10.40 - Selesai" ruangan="4.3.3"/>
-            <JadwalCard matkul="Andal" waktu="10.40 - Selesai" ruangan="4.3.3"/>
-            <JadwalCard matkul="Andal" waktu="10.40 - Selesai" ruangan="4.3.3"/>
-            <JadwalCard matkul="Andal" waktu="10.40 - Selesai" ruangan="4.3.3"/>
-            <JadwalCard matkul="Andal" waktu="10.40 - Selesai" ruangan="4.3.3"/>
       </div>
     </>
   )
