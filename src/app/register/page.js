@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -63,9 +64,9 @@ const page = () => {
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Sudah Register?{' '}
-            <a href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+            <Link href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
               Kalau Sudah Silahkan Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>
