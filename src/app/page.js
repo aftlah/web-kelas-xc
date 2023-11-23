@@ -1,17 +1,22 @@
-import JadwalKP from "./components/JadwalKP"
-import JadwalMatkul from "./components/JadwalMatkul"
-import Seminar from "./components/Seminar"
-import TopBar from "./components/TopBar"
-
+import JadwalKP from "./components/Pages/JadwalKP"
+import JadwalMatkul from "./components/Pages/JadwalMatkul"
+import Seminar from "./components/Pages/Seminar"
+import TopBar from "./components/Pages/TopBar"
+import Navbar from "./components/Pages/Navbar"
+import Pesan from "./components/Pages/Pesan"
 export default function Home() {
   return (
-    <div className="w-[90%] mx-auto">
-      <TopBar />
-      <JadwalMatkul />
-      <JadwalKP />
-      <Seminar/>
+    <>
+      <div className="w-[90%] mx-auto relative">
+        <TopBar />
+        <JadwalMatkul />
+        <JadwalKP />
+        <Seminar />
+        <Pesan/>
+      </div>
+      <Navbar />
+    </>
 
 
-    </div>
   )
 }
