@@ -3,7 +3,8 @@ import React from 'react'
 function Tugas() {
   return (
     <>
-        <h1 className="text-3xl font-bold mt-10">TUGAS</h1>
+
+      <h1 className="text-3xl font-bold mt-10">TUGAS</h1>
       <table className="table-fixed w-full text-center mt-4 bg-purple-400 ">
         <thead>
           <tr>
