@@ -1,16 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
+import Button from '../components/elemets/Button'
+import Image from 'next/image'
 
 const page = () => {
   return (
     <>
-    <div className="flex min-h-full mt-[20%]  flex-1 flex-col justify-center px-6 py-12 md:mt-0 lg:px-8">
+      <div className="flex min-h-full mt-[10%]  flex-1 flex-col justify-center px-6 py-12 md:mt-0 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img
-            className="mx-auto h-10 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt="Your Company"
-          />
+          <Image src="/images/logo.png" width={150} height={150} alt="tesdt" className='mx-auto'/>
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Login Akun Anda
           </h2>
@@ -34,12 +32,7 @@ const page = () => {
               </div>
             </div>
             <div>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-secondary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Login
-              </button>
+              <Button name={"Login"} />
             </div>
           </form>
 

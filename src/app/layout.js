@@ -11,9 +11,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en">
+        <body className={inter.className}>
+          <div className='sm:hidden'>
+            {children}
+          </div>
+          <div className="hidden sm:flex justify-center items-center sm:h-screen">
+       <h1 className="text-3xl font-bold">TAMPILAN BELUM TERSEDIA</h1>
+      </div>
+        </body>
+      </html>
     </>
 
   )
