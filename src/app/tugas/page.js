@@ -1,7 +1,7 @@
 import React from 'react'
 import CardTugas from '../components/elemets/CardTugas'
 
-const page = () => {
+const Tugas = () => {
   return (
     <>
       <div className="sm:hidden">
@@ -33,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Tugas
