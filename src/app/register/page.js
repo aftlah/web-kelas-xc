@@ -32,7 +32,6 @@ const Register = () => {
           <form className="" onSubmit={handleSubmit} >
             <Input namaInput={"Nama"} jenisInput={"nama"} onChange={(e) => setNama(e.target.value)} />
             <Input namaInput={"Nim"} jenisInput={"nim"} onChange={(e) => setNim(e.target.value)} />
-
             <div className='mt-8'>
               <Button name={"Register"} Type={"submit"} />
             </div>
