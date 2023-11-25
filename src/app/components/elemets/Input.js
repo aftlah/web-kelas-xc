@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({namaInput,jenisInput}) => {
+const Input = ({namaInput,jenisInput,onChange}) => {
     return (
         <div className='mb-3'>
             <label htmlFor={jenisInput} className="block text-sm font-medium leading-10 text-gray-900">
@@ -8,6 +8,7 @@ const Input = ({namaInput,jenisInput}) => {
             </label>
             <div>
                 <input
+                onChange={onChange}
                     id={jenisInput}
                     placeholder={`Masukan ${jenisInput}`}
                     name={jenisInput}

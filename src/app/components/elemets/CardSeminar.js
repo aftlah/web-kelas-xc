@@ -4,7 +4,7 @@ import React from 'react'
 
 const CardSeminar = ({ image, judul, children }) => {
     return (
-        <div className="max-w-sm border mt-5 p-5 rounded-lg shadow bg-primary">
+        <div className="max-w-sm border mt-5 p-5 rounded-lg  bg-primary shadow-xl">
             <Image src={image} alt="" width={400} height={200} className='rounded-lg' />
             <div>
                 <h5 className="mt-4 mb-1 pl-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{judul}</h5>
