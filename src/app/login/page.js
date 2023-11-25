@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Button from '../components/elemets/Button'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import Input from '../components/elemets/Input'
 
 const Login = () => {
   const [inputNim, setInputNim] = useState('')
@@ -33,32 +34,21 @@ const Login = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={hadleLogin}>
             <div>
-              <label htmlFor="nim" className="block text-sm font-medium leading-6 text-gray-900">
-                Masukan NIM
-              </label>
-              <div className="mt-2">
-                <input
-                onChange={(e) => setInputNim(e.target.value)}
-                  id="nim"
-                  name="nim"
-                  type="text"
-                  autoComplete="nim"
-                  required
-                  className="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
+              <Input namaInput={"Nim"} jenisInput={"nim"} onChange={(e) => setInputNim(e.target.value)}  />
             </div>
             <div>
               <Button name={"Login"} Type={"submit"}/>
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-500">
-            Sudah Register?{' '}
-            <Link href="/register" className="font-semibold leading-6 text-secondary hover:text-indigo-500">
+          <p className="mt-10 text-center text-sm text-gray-500 ">
+            Sudah Punya Akun?{' '}
+            <Link href="/register" className="block font-semibold leading-6 text-secondary hover:opacity-80">
               Kalau Belum Silahan Register
             </Link>
           </p>
+
+          <Link href="/" className='block text-center mt-16 rounded-md text-white font-semibold bg-secondary px-3 py-1.5 mx-auto text-sm w-40 '>Kembali Ke Home</Link>
         </div>
       </div>
     </>

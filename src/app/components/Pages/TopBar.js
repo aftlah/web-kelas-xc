@@ -8,10 +8,10 @@ const TopBar = () => {
    useEffect(() => {
       const namaSiswa = localStorage.getItem("nama")
       setNama(namaSiswa)
-   }, [])
+   }, [nama])
    return (
       <>
-         <div className='mt-4'>
+         <div className='mt-12 mb-12'>
             <div className='text-secondary text-center'>
                <div className='text-xl font-semibold'>
                   SELAMAT DATANG

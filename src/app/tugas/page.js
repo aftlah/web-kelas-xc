@@ -1,7 +1,7 @@
 import React from 'react'
 import CardTugas from '../components/elemets/CardTugas'
 
-const page = () => {
+const Tugas = () => {
   return (
     <>
       <div className="sm:hidden">
@@ -15,12 +15,14 @@ const page = () => {
           </svg>
         </div>
         <div className='mb-24'>
-        <CardTugas matkul={"ANalisis design dan algoritma"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
-        <CardTugas matkul={"ANalisis design dan algoritma"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
-        <CardTugas matkul={"ANalisis design dan algoritma"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
-        <CardTugas matkul={"ANalisis design dan algoritma"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
-        <CardTugas matkul={"ANalisis design dan algoritma"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
-        <CardTugas matkul={"ANalisis design dan algoritma"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Analisis design dan algoritma"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Pengantar Teknologi Informasi"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Sistem Basis Data"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Logika Matematika"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Bahasa Dasar Pemrograman"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Wawasan Budi Luhur"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Bahasa Indonesia"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
+          <CardTugas matkul={"Bahasa Ingris"} judulTugas={"Tugas Silver"} deadline={"20-12-2022"} />
         </div>
       </div>
 
@@ -31,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Tugas
