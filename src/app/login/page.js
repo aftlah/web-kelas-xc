@@ -48,7 +48,7 @@ const Login = () => {
             </Link>
           </p>
 
-          <Link href="/" className='block text-center mt-16 rounded-md text-white font-semibold bg-secondary px-3 py-1.5 mx-auto text-sm w-40 '>Kembali Ke Home</Link>
+          <Link href="/" className='block text-center mt-12 rounded-md text-white font-semibold bg-secondary px-3 py-1.5 mx-auto text-sm w-40 '>Kembali Ke Home</Link>
         </div>
       </div>
     </>
