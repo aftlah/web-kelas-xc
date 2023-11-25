@@ -1,21 +1,36 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Button from '../components/elemets/Button'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const page = () => {
+  const router = useRouter()
+
+  const [nim, setNim] = React.useState('')
+  const hadleLogin = (e) => {
+    e.preventDefault()
+    const nimMahasiswa = localStorage.getItem('nim', nim)
+
+    if (nimMahasiswa) {
+      router.push('/')
+    }else{
+      router.push('/login')
+    }
+  }
   return (
     <>
       <div className="flex min-h-full mt-[10%]  flex-1 flex-col justify-center px-6 py-12 md:mt-0 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <Image src="/images/logo.png" width={150} height={150} alt="tesdt" className='mx-auto'/>
+          <Image priority src="/images/logo.png" width={150} height={150} alt="tesdt" className='mx-auto w-40 h-auto'/>
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Login Akun Anda
           </h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" onSubmit={hadleLogin}>
             <div>
               <label htmlFor="nim" className="block text-sm font-medium leading-6 text-gray-900">
                 Masukan NIM
@@ -32,7 +47,7 @@ const page = () => {
               </div>
             </div>
             <div>
-              <Button name={"Login"} />
+              <Button name={"Login"} Type={"submit"}/>
             </div>
           </form>
 

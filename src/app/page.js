@@ -5,9 +5,11 @@ import TopBar from "./components/Pages/TopBar"
 import Pesan from "./components/Pages/Pesan"
 import Footer from "./components/Pages/Footer"
 import Navbar from "./components/Pages/Navbar"
+import Head from "next/head"
 export default function Home() {
   return (
     <>
+      
       <div className="sm:hidden">
         <div className="w-[90%] mx-auto relative ">
           <TopBar />
@@ -19,7 +21,7 @@ export default function Home() {
         <Footer />
         <Navbar />
       </div>
-      
+
     </>
   )
 }
