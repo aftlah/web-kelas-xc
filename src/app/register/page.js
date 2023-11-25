@@ -6,22 +6,17 @@ import Button from '../components/elemets/Button'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Register = () => {
   const router = useRouter()
   const [nim, setNim] = useState('')
   const [nama, setNama] = useState('')
 
-
   const handleSubmit = (e) => {
     e.preventDefault()
-    // console.log(nim, nama);
     localStorage.setItem("nama", nama)
     localStorage.setItem("nim", nim)
-
-
     router.push("/login");
   }
-
 
   return (
     <>
@@ -89,4 +84,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Register

@@ -1,22 +1,23 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Button from '../components/elemets/Button'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Login = () => {
+  const [inputNim, setInputNim] = useState('')
   const router = useRouter()
 
-  const [nim, setNim] = React.useState('')
   const hadleLogin = (e) => {
     e.preventDefault()
-    const nimMahasiswa = localStorage.getItem('nim', nim)
+    const nimMahasiswa = localStorage.getItem('nim')
 
-    if (nimMahasiswa) {
-      router.push('/')
-    }else{
+    if (inputNim !== nimMahasiswa) {
       router.push('/login')
+      alert('Nim Tidak Terdaftar')
+    }else{
+      router.push('/')
     }
   }
   return (
@@ -37,6 +38,7 @@ const page = () => {
               </label>
               <div className="mt-2">
                 <input
+                onChange={(e) => setInputNim(e.target.value)}
                   id="nim"
                   name="nim"
                   type="text"
@@ -63,4 +65,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Login
