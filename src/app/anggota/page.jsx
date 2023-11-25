@@ -1,11 +1,11 @@
 import React from 'react'
 
-const page = () => {
+const Anggota = () => {
   return (
     <>
-        <div>Anggota page</div>
+        <div>Anggota Anggota</div>
     </>
   )
 }
 
-export default page
+export default Anggota
