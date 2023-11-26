@@ -1,5 +1,6 @@
 import React from 'react'
 import CardTugas from '../components/elemets/CardTugas'
+import Navbar from '../components/Pages/Navbar'
 
 const Tugas = () => {
   return (
@@ -29,6 +30,7 @@ const Tugas = () => {
       <div className="hidden sm:flex justify-center items-center sm:h-screen">
         <h1 className="text-3xl font-bold">TAMPILAN BELUM TERSEDIA</h1>
       </div>
+      <Navbar />
     </>
   )
 }

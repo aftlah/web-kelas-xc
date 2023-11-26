@@ -1,18 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Footer = () => {
   return (
     <>
       <div className='w-full  py-6 px-5 mt-10 text-white bg-secondary h-[23rem]'>
         <div>
-          <div className='text-6xl font-bold  text-white font-xl'>XC</div>
-          <div className='text-sm font-medium mt-2'>
+          <Image src='/images/logo-putih.png' alt='logo' width={200} height={200} className='w-24 h-auto '/>
+          <div className='text-[0.8rem] font-medium mt-4'>
             <div>Copyright © Kelas XC 2023</div>
             <div>Made With ❤️</div>
           </div>
         </div>
-        <div className='mt-6 flex gap-x-11 justify-between '>
+        <div className='mt-6 flex gap-x-11 justify-between'>
           <div>
             <h1 className='text-xl font-bold'>Kontributor</h1>
             <div className='flex flex-col text-xs gap-y-2 mt-1'>

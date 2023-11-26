@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Pages/Navbar'
 
 const CardTugas = ({ matkul, judulTugas, deadline }) => {
     return (
@@ -11,7 +10,6 @@ const CardTugas = ({ matkul, judulTugas, deadline }) => {
                     <p className='text-end font-extrabold text-white text-xs'>Batas : {deadline}</p>
                 </div>
             </div>
-            <Navbar />
         </>
     )
 }
