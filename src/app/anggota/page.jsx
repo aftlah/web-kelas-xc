@@ -39,6 +39,8 @@ const Anggota = () => {
     anggota.name.toLowerCase().includes(search.toLowerCase())
   )
 
+  // console.log(filterAnggota.length);
+
   return (
     <>
       <div className="flex justify-center mt-10 mb-5 gap-2 items-end">
@@ -79,25 +81,13 @@ const Anggota = () => {
           placeholder="Cari Anggota..."
           className="w-[80%] border-none pl-1 border-secondary text-sm font-semibold focus-within:outline-none"
         />
-        <button className="bg-secondary  w-12 rounded-md text-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2.5}
-            stroke="currentColor"
-            className="w-4 h-4 mx-auto "
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-            />
-          </svg>
-        </button>
       </div>
 
-      <div className="grid w-full grid-cols-2 gap-2 mt-6 px-2">
+        {filterAnggota.filter((anggota) => anggota.name !== null).length === 0 && (
+           <p className="text-center mt-[35%]  mx-auto w-[50%] text-secondary text-xl font-bold">Nama Anggota Tidak Terdaftar</p> 
+          )
+        }
+      <div className="grid w-full grid-cols-2 gap-2 mt-6 mb-24 px-2">
         {filterAnggota.map((data) => (
           <div key={data.id} className="w-[99%] mx-auto border mt-3 p-3 shadow-xl rounded-lg  bg-primary">
             <Image
