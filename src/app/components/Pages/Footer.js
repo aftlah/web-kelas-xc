@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className='flex flex-col text-xs gap-y-2 mt-1'>
               <Link href='https://www.instagram.com/aftlah/' target='_blank'>@afltah</Link>
               <Link href='https://www.instagram.com/nerdy.dandy/' target='_blank'>@nerdy.dandy</Link>
-              <Link href='https://www.instagram.com/fardias1/' target='_blank'>@fasdias1</Link>
+              <Link href='https://www.instagram.com/fardias1/' target='_blank'>@fardias1</Link>
             </div>
           </div>
           <div>
