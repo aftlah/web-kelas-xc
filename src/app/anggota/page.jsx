@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -72,7 +73,7 @@ const Anggota = () => {
             className="rounded-md bg-white mx-auto"
           />
           <h1 className="font-bold text-md text-white my-3 ml-1">NAMA</h1>
-          <p className="text-white font-medium text-sm -mt-2 ml-1">"Qoutes"</p>
+          <p className="text-white font-medium text-sm -mt-2 ml-1">`Qoutes`</p>
           <div className=" flex justify-end w-full mt-4">
             <Link href="#" className=" text-white w-fit mr-1 ">
               <svg
@@ -98,7 +99,7 @@ const Anggota = () => {
             className="rounded-md bg-white mx-auto"
           />
           <h1 className="font-bold text-md text-white my-3 ml-1">NAMA</h1>
-          <p className="text-white font-medium text-sm -mt-2 ml-1">"Qoutes"</p>
+          <p className="text-white font-medium text-sm -mt-2 ml-1">`Qoutes`</p>
           <div className=" flex justify-end w-full mt-4">
             <Link href="#" className=" text-white w-fit mr-1 ">
               <svg
@@ -124,7 +125,7 @@ const Anggota = () => {
             className="rounded-md bg-white mx-auto"
           />
           <h1 className="font-bold text-md text-white my-3 ml-1">NAMA</h1>
-          <p className="text-white font-medium text-sm -mt-2 ml-1">"Qoutes"</p>
+          <p className="text-white font-medium text-sm -mt-2 ml-1">`Qoutes`</p>
           <div className=" flex justify-end w-full mt-4">
             <Link href="#" className=" text-white w-fit mr-1 ">
               <svg
@@ -150,7 +151,7 @@ const Anggota = () => {
             className="rounded-md bg-white mx-auto"
           />
           <h1 className="font-bold text-md text-white my-3 ml-1">NAMA</h1>
-          <p className="text-white font-medium text-sm -mt-2 ml-1">"Qoutes"</p>
+          <p className="text-white font-medium text-sm -mt-2 ml-1">`Qoutes`</p>
           <div className=" flex justify-end w-full mt-4">
             <Link href="#" className=" text-white w-fit mr-1 ">
               <svg
