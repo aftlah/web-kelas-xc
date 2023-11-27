@@ -11,7 +11,7 @@ const TopBar = () => {
    }, [nama])
    return (
       <>
-         <div className='mt-10 mb-12'>
+         <div className='mt-10 mb-12 font-bold'>
             <div className='text-secondary text-center'>
                <div className='text-xl font-semibold'>
                   SELAMAT DATANG
