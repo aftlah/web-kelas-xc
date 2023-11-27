@@ -5,16 +5,24 @@ import Input from '../components/elemets/Input'
 import Button from '../components/elemets/Button'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import Swal from 'sweetalert2'
 
 const Register = () => {
   const router = useRouter()
   const [nim, setNim] = useState('')
   const [nama, setNama] = useState('')
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
     localStorage.setItem("nama", nama)
     localStorage.setItem("nim", nim)
+    Swal.fire({
+      title: 'Register Succes',
+      text: 'Silahkan Login',
+      icon: 'success',
+      confirmButtonText: 'Oke'
+    })
     router.push("/login");
   }
 
