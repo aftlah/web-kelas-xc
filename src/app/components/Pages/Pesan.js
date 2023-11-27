@@ -17,9 +17,10 @@ const Pesan = () => {
     }
     Swal.fire({
       title: 'Pesan Berhasil Terkirim',
-      text: 'Terimakasih',
+      text: 'Tararengkyu ',
       icon: 'success',
-      confirmButtonText: 'Oke'
+      confirmButtonColor: '#0891B2',
+      confirmButtonText: 'Oke',
     })
     console.log(data);
     setNim('')
@@ -34,7 +35,7 @@ const Pesan = () => {
         <InputCard Type="Nim" onChange={(e) => setNim(e.target.value)}  value={nim}/>
         <div className='bg-white my-4 flex flex-col  rounded-lg '  >
           <label htmlFor="pesan" className='font-bold text-secondary'>Pesan</label>
-          <textarea onChange={(e) => setTextarea(e.target.value)} value={textarea} type="text" id="pesan" rows="4" className='border-secondary border-2 rounded-lg p-2' placeholder="Masukan Pesan" />
+          <textarea onChange={(e) => setTextarea(e.target.value)} value={textarea} type="text" id="pesan" rows="4" className='border-secondary border-2 rounded-lg p-2' placeholder="Masukan Pesan Anda" />
         </div>
         <button type="submit" className='w-full rounded-xl bg-primary text-center py-2.5 px-4 font-bold text-xl text-white'>
           Kirim
