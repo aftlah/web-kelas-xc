@@ -26,7 +26,7 @@ const JadwalKP = () => {
             tanggal: "20-11-2003",
             matkul: "Sistem Basis Data",
             waktu: "10.40 - 12.30",
-            ruangan: "4.3.3"
+            ruangan: "Lab Kom"
         },
     ]
     return (
@@ -42,9 +42,7 @@ const JadwalKP = () => {
                         <div className='text-white text-lg font-bold text-center'>Tidak Ada Kelas Pengganti</div>
                     </div>
                 )
-
             }
-
         </>
     )
 }
