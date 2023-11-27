@@ -21,6 +21,7 @@ const Register = () => {
       title: 'Register Succes',
       text: 'Silahkan Login',
       icon: 'success',
+      confirmButtonColor: '#004A5C',
       confirmButtonText: 'Oke'
     })
     router.push("/login");
