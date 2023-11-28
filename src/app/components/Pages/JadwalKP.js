@@ -31,7 +31,7 @@ const JadwalKP = () => {
     ]
     return (
         <>
-            <h1 className='mt-12 px-1 font-black text-secondary text-xl'>KELAS PENGGANTI</h1>
+            <h1 className='mt-12 px-1 font-black text-secondary text-xl sm:text-2xl'>KELAS PENGGANTI</h1>
             {
                 datas.length > 0 ? (
                     datas.map((data) => (

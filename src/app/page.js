@@ -11,16 +11,16 @@ export default function Home() {
       {/* <div className="md:hidden"> */}
       <div className="w-[100%]  mx-auto gap-x-6 relative sm:flex sm:flex-col overflow-hidden">
         <div className=" sm:w-[100%]">
-          <div className="w-[90%] mx-auto sm:w-[100%] sm:ml-32 ">
+          <div className="w-[90%] mx-auto sm:w-[100%] sm:ml-[8.3rem] ">
             <div className="sm:w-[70%]">
               <TopBar />
               <JadwalMatkul />
               <JadwalKP />
             </div>
-            <div className="sm:overflow-x-scroll">
+            <div className="sm:overflow-x-auto">
             <Seminar />
             </div>
-            <div className="w-[70%]">
+            <div className="sm:w-[70%]">
               <Pesan />
             </div>
           </div>
