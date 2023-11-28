@@ -11,7 +11,7 @@ export default function Home() {
       {/* <div className="md:hidden"> */}
       <div className="w-[100%]  mx-auto gap-x-6 relative sm:flex sm:flex-col overflow-hidden">
         <div className=" sm:w-[100%]">
-          <div className="w-[90%] mx-auto sm:w-[100%] sm:ml-[8.3rem] ">
+          <div className="w-[90%] mx-auto sm:w-[100%] sm:ml-[9.2rem] ">
             <div className="sm:w-[70%]">
               <TopBar />
               <JadwalMatkul />

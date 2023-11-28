@@ -27,9 +27,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='h-[5rem] bg-primary bottom-0 fixed w-full sm:block sm:h-full sm:w-[6.5rem] '>
-      <Image src='/images/logo-putih.png' alt='logo' width={200} height={200} className='w-16 h-auto mt-4 mx-auto hidden sm:block' />
-        <ul className='flex justify-between items-center  py-4 px-10  text-white font-semibold sm:flex-col sm:gap-y-5 sm:w-full sm:px-2 '>
+      <nav className='h-[5rem] bg-primary bottom-0 fixed w-full sm:block sm:h-full sm:w-[8rem] '>
+      <Image src='/images/logo-putih.png' alt='logo' width={200} height={200} className='w-[5.5rem] h-auto mt-4 mx-auto hidden sm:block sm:mt-7 sm:mb-6' />
+        <ul className='flex justify-between items-center  py-4 px-10  text-white font-semibold sm:flex-col sm:gap-y-7 sm:w-full sm:px-2 '>
           <li className={`mt-1 w-10 sm:border-b-2 border-gray-800 sm:w-full hidden sm:block  `}>
           {
               data && data.length > 0 ? (

@@ -11,20 +11,24 @@ const Register = () => {
   const router = useRouter()
   const [nim, setNim] = useState('')
   const [nama, setNama] = useState('')
-  
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    localStorage.setItem("nama", nama)
-    localStorage.setItem("nim", nim)
-    Swal.fire({
-      title: 'Register Succes',
-      text: 'Silahkan Login',
-      icon: 'success',
-      confirmButtonColor: '#004A5C',
-      confirmButtonText: 'Oke'
-    })
-    router.push("/login");
+    if (nim.length <= 10 && nim.length >= 10) {
+      localStorage.setItem("nama", nama)
+      localStorage.setItem("nim", nim)
+      Swal.fire({
+        title: 'Register Succes',
+        text: 'Silahkan Login',
+        icon: 'success',
+        confirmButtonColor: '#004A5C',
+        confirmButtonText: 'Oke'
+      })
+      router.push("/login");
+    } else {
+      alert('Nim Harus 10 Angka')
+    }
   }
 
   return (

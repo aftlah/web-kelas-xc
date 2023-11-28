@@ -22,7 +22,7 @@ export const Footer = () => {
   }
   return (
     <>
-      <div className='w-full  py-6 px-5 mt-10 mb-10 text-white bg-secondary h-[24rem] sm:mb-0 sm:h-[21rem] sm:pl-36 sm:pr-0'>
+      <div className='w-full  py-6 px-5 mt-10 mb-10 text-white bg-secondary h-[24rem] sm:mb-0 sm:h-[21rem] sm:pl-[9.5rem] sm:pr-0'>
         <div className='sm:mt-4'>
           <div>
             <Image src='/images/logo-putih.png' alt='logo' width={200} height={200} className='w-24 h-auto ' />
