@@ -9,14 +9,20 @@ export default function Home() {
   return (
     <>
       {/* <div className="md:hidden"> */}
-      <div className="w-[100%]  mx-auto gap-x-6 relative sm:flex sm:flex-col">
-        <div className=" sm:w-[100%] ">
-          <div className="w-[70%] ml-32 ">
-            <TopBar />
-            <JadwalMatkul />
-            <JadwalKP />
+      <div className="w-[100%]  mx-auto gap-x-6 relative sm:flex sm:flex-col overflow-hidden">
+        <div className=" sm:w-[100%]">
+          <div className="w-[90%] mx-auto sm:w-[100%] sm:ml-32 ">
+            <div className="sm:w-[70%]">
+              <TopBar />
+              <JadwalMatkul />
+              <JadwalKP />
+            </div>
+            <div className="sm:overflow-x-scroll">
             <Seminar />
-            <Pesan />
+            </div>
+            <div className="w-[70%]">
+              <Pesan />
+            </div>
           </div>
           <div className="w-[100%] sm:w-[100%] ml-auto">
             <Footer />
