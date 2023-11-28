@@ -8,17 +8,25 @@ import Navbar from "./components/Pages/Navbar"
 export default function Home() {
   return (
     <>
-      <div className="sm:hidden">
-        <div className="w-[90%] mx-auto relative ">
-          <TopBar />
-          <JadwalMatkul />
-          <JadwalKP />
-          <Seminar />
-          <Pesan />
+      {/* <div className="md:hidden"> */}
+      <div className="w-[100%]  mx-auto gap-x-6 relative sm:flex sm:flex-col">
+        <div className=" sm:w-[100%] ">
+          <div className="w-[70%] ml-32 ">
+            <TopBar />
+            <JadwalMatkul />
+            <JadwalKP />
+            <Seminar />
+            <Pesan />
+          </div>
+          <div className="w-[100%] sm:w-[100%] ml-auto">
+            <Footer />
+          </div>
         </div>
-        <Footer />
-        <Navbar />
+        <div className="sm:w-[100%]">
+          <Navbar />
+        </div>
       </div>
+      {/* </div> */}
 
     </>
   )

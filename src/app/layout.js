@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
         <body className={poppins.className}>
-          <div className='sm:hidden'>
+          <div className='lg:hidden'>
             {children}
           </div>
-          <div className="hidden sm:flex justify-center items-center sm:h-screen">
+          <div className="hidden lg:flex justify-center items-center sm:h-screen">
             <h1 className="text-3xl font-bold">TAMPILAN BELUM TERSEDIA</h1>
           </div>
         </body>
