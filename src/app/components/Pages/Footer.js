@@ -22,7 +22,7 @@ export const Footer = () => {
   }
   return (
     <>
-      <div className='w-full  py-6 px-5 mt-10 mb-10 text-white bg-secondary h-[24rem] sm:mb-0 sm:h-[21rem] sm:px-36'>
+      <div className='w-full  py-6 px-5 mt-10 mb-10 text-white bg-secondary h-[24rem] sm:mb-0 sm:h-[21rem] sm:pl-36 sm:pr-0'>
         <div className='sm:mt-4'>
           <div>
             <Image src='/images/logo-putih.png' alt='logo' width={200} height={200} className='w-24 h-auto ' />
@@ -54,7 +54,7 @@ export const Footer = () => {
               <Link href='https://www.instagram.com/fardias1/' target='_blank'>@fardias1</Link>
             </div>
           </div>
-          <div className='sm:w-72'>
+          <div className='sm:w-52'>
             <h1 className='text-xl font-bold'>Location</h1>
             <p className='text-xs'>Universitas Budi Luhur, Jl Ciledug
               raya No.1C, Petukangan utara, Kota
