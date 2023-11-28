@@ -22,7 +22,6 @@ const Pesan = () => {
       confirmButtonColor: '#0891B2',
       confirmButtonText: 'Oke',
     })
-    console.log(data);
     setNim('')
     setNama('')
     setTextarea('')
