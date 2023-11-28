@@ -37,7 +37,7 @@ const datas = [
         id: 2,
         hari: "Senin",
         tanggal: "20-11-2003",
-        matkul: "Pengantar Teknologi Informasi",
+        matkul: "Bahasa Pemrograman Dasar",
         waktu: "10.40 - 12.30",
         ruangan: "4.3.3"
     },
