@@ -41,7 +41,7 @@ const Anggota = () => {
 
   return (
     <>
-      <div className="sm:w-[80%] sm:ml-32">
+      <div className="sm:w-[80%] sm:ml-36">
         <div className="flex justify-center mt-10 mb-5 gap-2 items-end ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
