@@ -11,6 +11,7 @@ const Register = () => {
   const router = useRouter()
   const [nim, setNim] = useState('')
   const [nama, setNama] = useState('')
+  const [password, setPassword] = useState('')
 
 
   const handleSubmit = (e) => {
@@ -18,6 +19,7 @@ const Register = () => {
     if (nim.length <= 10 && nim.length >= 10) {
       localStorage.setItem("nama", nama)
       localStorage.setItem("nim", nim)
+      localStorage.setItem("password", password)
       Swal.fire({
         title: 'Register Succes',
         text: 'Silahkan Login',
@@ -43,8 +45,9 @@ const Register = () => {
 
         <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="" onSubmit={handleSubmit} >
-            <Input namaInput={"Nama"} jenisInput={"nama"} onChange={(e) => setNama(e.target.value)} />
-            <Input namaInput={"Nim"} jenisInput={"nim"} onChange={(e) => setNim(e.target.value)} />
+            <Input namaInput={"Nama"} jenisInput={"nama"} type={"text"} onChange={(e) => setNama(e.target.value)} />
+            <Input namaInput={"Nim"} jenisInput={"nim"} type={"number"} onChange={(e) => setNim(e.target.value)} />
+            <Input namaInput={"Password"} jenisInput={"password"} type={"password"} onChange={(e) => setPassword(e.target.value)} />
             <div className='mt-8'>
               <Button name={"Register"} Type={"submit"} />
             </div>
