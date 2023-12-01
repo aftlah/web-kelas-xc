@@ -8,13 +8,15 @@ import Input from '../components/elemets/Input'
 
 const Login = () => {
   const [inputNim, setInputNim] = useState('')
+  const [inputPassword, setInputPassword] = useState('')
   const router = useRouter()
 
   const hadleLogin = (e) => {
     e.preventDefault()
     const nimMahasiswa = localStorage.getItem('nim')
+    const passwordMahasiswa = localStorage.getItem('password')
 
-    if (inputNim !== nimMahasiswa) {
+    if (inputNim !== nimMahasiswa && inputPassword !== passwordMahasiswa ) {
       router.push('/login')
       alert('Nim Tidak Terdaftar')
     }else{
@@ -34,7 +36,8 @@ const Login = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={hadleLogin}>
             <div>
-              <Input namaInput={"Nim"} jenisInput={"nim"} onChange={(e) => setInputNim(e.target.value)}  />
+              <Input namaInput={"Nim"} jenisInput={"nim"} type={"number"} onChange={(e) => setInputNim(e.target.value)}  />
+              <Input namaInput={"Password"} jenisInput={"nim"} type={"password"} onChange={(e) => setInputPassword(e.target.value)}  />
             </div>
             <div>
               <Button name={"Login"} Type={"submit"}/>
