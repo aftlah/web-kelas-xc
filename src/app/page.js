@@ -17,9 +17,8 @@ export default function Home() {
               <JadwalMatkul />
               <JadwalKP />
             </div>
-            <div className='mx-auto text-secondary text-xl mt-12 -mb-2  px-1 font-extrabold sm:text-2xl'>SEMINAR</div>
             <div className="sm:overflow-x-auto">
-            <Seminar />
+              <Seminar />
             </div>
             <div className="sm:w-[70%]">
               <Pesan />

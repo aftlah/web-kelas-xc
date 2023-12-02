@@ -35,7 +35,7 @@ const Register = () => {
 
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center mt-[5%] md:mt-0 px-6 py-12 lg:px-8">
+      <div className="flex min-h-full flex-1 flex-col justify-center mt-[8%] sm:mt-[20%] px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image priority src="/images/logo.png" width={150} height={150} alt="tesdt" className='mx-auto w-40 h-auto' />
           <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
