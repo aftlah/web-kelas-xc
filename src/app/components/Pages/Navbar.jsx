@@ -24,8 +24,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='h-[5rem] bg-primary bottom-0 fixed w-full sm:block sm:h-screen sm:w-[8rem] '>
-      <Image src='/images/logo-putih.png' alt='logo' width={200} height={200} className='w-[5.5rem] h-auto mt-4 mx-auto hidden sm:block sm:mt-16 sm:mb-6' />
+      <nav className='h-[5rem] bg-primary bottom-0 fixed w-full sm:block sm:h-full sm:w-[8rem] sm:mt-16'>
+        <div className='sm:mt-16'>
+      <Image src='/images/logo-putih.png' alt='logo' width={200} height={200} className='w-[5.5rem] h-auto mt-4 mx-auto hidden sm:block  sm:mb-6' />
         <ul className='flex justify-between items-center  py-4 px-10  text-white font-semibold sm:flex-col sm:gap-y-7 sm:w-full sm:px-2 '>
           <li className={`mt-1 w-10 sm:border-b-2 border-gray-800 sm:w-full hidden sm:block  `}>
           {
@@ -71,6 +72,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        </div>
       </nav>
     </>
   )
