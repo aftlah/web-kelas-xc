@@ -30,6 +30,10 @@ const Seminar = () => {
               slidesPerView: 3,
               spaceBetween: 80,
             },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 80,
+            }
           }}
           modules={[Pagination]}
           className="mySwiper"

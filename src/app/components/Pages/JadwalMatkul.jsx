@@ -3,7 +3,13 @@ import JadwalCard from "../elemets/JadwalCard";
 
 const JadwalMatkul = () => {
   const day = new Date().toString().split(" ").slice(0, 1).join(" ");
-  const date = new Date().toISOString().split(["T"]).at(0).split("-").sort((a, b) => a.localeCompare(b)).join("-");
+  const date = new Date()
+    .toISOString()
+    .split(["T"])
+    .at(0)
+    .split("-")
+    .sort((a, b) => a.localeCompare(b))
+    .join("-");
 
   let hari, waktu, matkul, ruang;
   switch (day) {
@@ -29,7 +35,7 @@ const JadwalMatkul = () => {
       hari = "Kamis";
       matkul = ["Bahasa Ingris", "Bahasa Indonesia"];
       waktu = ["09.45 - 11.25", "13.25 - 14.25"];
-      ruang = ["4.3.3", "Labkom"];
+      ruang = ["4.3.3", "Lab kom"];
       break;
 
     default:
@@ -42,16 +48,13 @@ const JadwalMatkul = () => {
         JADWAL MATKUL
       </h1>
       <div className="bg-primary  rounded-xl mt-2 p-4 shadow-xl sm:text-start">
-        <div className="text-white text-2xl font-bold">
-          {hari} <span className="text-sm ml-2">{date}</span>
-        </div>
-        {hari.length === 0 &&
-        matkul.length === 0 &&
-        waktu.length === 0 &&
-        ruang.length === 0 ? (
-          <div>Tidak ada kelas</div>
+        {!hari && !matkul && !waktu && !ruang ? (
+          <div className="text-white text-xl font-bold text-center my-5">Tidak ada kelas</div>
         ) : (
           <>
+            <div className="text-white text-2xl font-bold">
+              {hari} <span className="text-sm ml-2">{date}</span>
+            </div>
             <JadwalCard
               matkul={matkul[0]}
               waktu={waktu[0]}
