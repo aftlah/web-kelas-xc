@@ -8,7 +8,6 @@ import Navbar from "./components/Pages/Navbar"
 export default function Home() {
   return (
     <>
-      {/* <div className="md:hidden"> */}
       <div className="w-[100%]  mx-auto gap-x-6 relative sm:flex sm:flex-col overflow-hidden">
         <div className=" sm:w-[100%]">
           <div className="w-[90%] mx-auto sm:w-[100%] sm:ml-[9.5rem] ">
@@ -32,8 +31,6 @@ export default function Home() {
           <Navbar />
         </div>
       </div>
-      {/* </div> */}
-
     </>
   )
 }

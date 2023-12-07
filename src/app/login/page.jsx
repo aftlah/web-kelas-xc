@@ -36,21 +36,19 @@ const Login = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" onSubmit={hadleLogin}>
             <div>
-              <Input namaInput={"Nim"} jenisInput={"nim"} type={"number"} onChange={(e) => setInputNim(e.target.value)}  />
+              <Input namaInput={"Nim"} jenisInput={"nim"} type={"text"} onChange={(e) => setInputNim(e.target.value)}  />
               <Input namaInput={"Password"} jenisInput={"nim"} type={"password"} onChange={(e) => setInputPassword(e.target.value)}  />
             </div>
             <div>
               <Button name={"Login"} Type={"submit"}/>
             </div>
           </form>
-
           <p className="mt-10 text-center text-sm text-gray-500 ">
             Sudah Punya Akun?{' '}
             <Link href="/register" className="block font-semibold leading-6 text-secondary hover:opacity-80">
               Kalau Belum Silahan Register
             </Link>
           </p>
-
           <Link href="/" className='block text-center mt-12 rounded-md text-white font-semibold bg-secondary px-3 py-1.5 mx-auto text-sm w-40 '>Kembali Ke Home</Link>
         </div>
       </div>

@@ -73,6 +73,7 @@ const Anggota = () => {
             />
           </svg>
         </div>
+
         <div className="flex justify-between  mt-3 p-1 h-11 w-[80%] mx-auto border-secondary border-[3px] rounded-lg">
           <input
             onChange={(e) => setSearch(e.target.value)}
@@ -88,7 +89,7 @@ const Anggota = () => {
             Nama Anggota Tidak Terdaftar
           </p>
         )}
-        <div className="grid w-full grid-cols-2 gap-2 mt-6 mb-24 px-2">
+        <div className="grid w-full grid-cols-2 gap-2 mt-6 mb-24 px-2 lg:grid-cols-3 lg:ml-10">
           {filterAnggota.map((data) => (
             <div
               key={data.id}
