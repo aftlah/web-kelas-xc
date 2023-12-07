@@ -35,7 +35,7 @@ const JadwalMatkul = () => {
       hari = "Kamis";
       matkul = ["Bahasa Ingris", "Bahasa Indonesia"];
       waktu = ["09.45 - 11.25", "13.25 - 14.25"];
-      ruang = ["4.3.3", "Lab kom"];
+      ruang = ["4.3.3", "4.3.3"];
       break;
 
     default:
