@@ -79,13 +79,13 @@ const Anggota = () => {
             onChange={(e) => setSearch(e.target.value)}
             type="text"
             placeholder="Cari Anggota..."
-            className="w-[80%] border-none pl-1 border-secondary text-sm font-semibold focus-within:outline-none"
+            className="w-[100%] border-none pl-1 border-secondary text-sm font-semibold focus-within:outline-none"
           />
         </div>
 
         {filterAnggota.filter((anggota) => anggota.name !== null).length ===
           0 && (
-          <p className="text-center mt-[35%]  mx-auto w-[50%] text-secondary text-xl font-bold">
+          <p className="text-center mt-[35%]  mx-auto w-[50%] text-secondary text-2xl font-bold">
             Nama Anggota Tidak Terdaftar
           </p>
         )}
