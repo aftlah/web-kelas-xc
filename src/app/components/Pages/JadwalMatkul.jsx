@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useEffect, useState } from "react";
 import JadwalCard from "../elemets/JadwalCard";
 
@@ -75,6 +75,7 @@ const JadwalMatkul = () => {
       <h1 className="mt-10 px-1 font-black text-secondary text-xl sm:text-2xl">
         JADWAL MATKUL
       </h1>
+      
       <div className="bg-primary  rounded-xl mt-2 p-4 shadow-xl sm:text-start">
         {!hari || (!matkul && !waktu && !ruang) ? (
           <>

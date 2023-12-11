@@ -60,7 +60,7 @@ const Tugas = () => {
           </div>
         ) : (
           <div className="mb-24">
-            <div className="text-secondary text-2xl font-bold text-center mt-20 lg:mr-8">
+            <div className="text-secondary text-2xl font-bold text-center mt-20 ">
               Tidak Ada Tugas
             </div>
           </div>

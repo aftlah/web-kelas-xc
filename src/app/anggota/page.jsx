@@ -85,7 +85,7 @@ const Anggota = () => {
 
         {filterAnggota.filter((anggota) => anggota.name !== null).length ===
           0 && (
-          <p className="text-center mt-[35%]  mx-auto w-[50%] text-secondary text-2xl font-bold">
+          <p className="text-center mt-[35%]  mx-auto w-[50%] text-secondary text-2xl font-bold md:mt-[20%]">
             Nama Anggota Tidak Terdaftar
           </p>
         )}
@@ -97,10 +97,12 @@ const Anggota = () => {
             >
               <Image
                 src="/images/5.png"
-                alt=""
-                width={330}
-                height={230}
-                className="rounded-md bg-white mx-auto"
+                alt="iamge"
+                width={150}
+                height={150}
+                priority={true}
+                placeholder = 'empty'
+                className="rounded-md bg-white mx-auto w-full h-auto"
               />
               <h1 className="font-bold text-md text-white my-3 ml-1">
                 {data.name}
