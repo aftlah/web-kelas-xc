@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import JadwalCard from "../elemets/JadwalCard";
 import axios from "axios";
+import { ResponseCookies } from "next/dist/compiled/@edge-runtime/cookies";
 
 const JadwalMatkul = () => {
   const [datetime, setDate] = useState({
@@ -15,24 +16,8 @@ const JadwalMatkul = () => {
       .join("-"),
   });
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const res = await axios.get({
-          url: "http://localhost:5000/jadwal",
-          data: {
-            hari: datetime.day,
-          },
-        });
-        
-        const data = await res.json();
-        console.log(data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    getData();
 
+  useEffect(() => {
     const timer = setInterval(() => {
       setDate({
         day: new Date().toString().split(" ").slice(0, 1).join(" "),
