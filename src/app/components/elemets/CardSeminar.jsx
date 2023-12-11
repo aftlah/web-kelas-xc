@@ -9,10 +9,10 @@ const CardSeminar = ({ image, judul, children }) => {
         src={image}
         priority={true}
         alt="img"
-        width={200}
+        width={350}
         height={150}
         placeholder="empty"
-        className="rounded-lg h-52  sm:w-72 sm:h-48 sm:mx-auto"
+        className="rounded-lg h-auto w-auto sm:w-72 sm:h-48 sm:mx-auto"
       />
       <div>
         <h5 className="mt-4 mb-1 pl-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

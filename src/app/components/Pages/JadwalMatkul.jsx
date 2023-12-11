@@ -1,6 +1,7 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import JadwalCard from "../elemets/JadwalCard";
+import axios from "axios";
 
 const JadwalMatkul = () => {
   const [datetime, setDate] = useState({
@@ -15,6 +16,23 @@ const JadwalMatkul = () => {
   });
 
   useEffect(() => {
+    const getData = async () => {
+      try {
+        const res = await axios.get({
+          url: "http://localhost:5000/jadwal",
+          data: {
+            hari: datetime.day,
+          },
+        });
+        
+        const data = await res.json();
+        console.log(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getData();
+
     const timer = setInterval(() => {
       setDate({
         day: new Date().toString().split(" ").slice(0, 1).join(" "),
@@ -26,9 +44,9 @@ const JadwalMatkul = () => {
           .sort((a, b) => a.localeCompare(b))
           .join("-"),
       });
-    },21600000)
-    return () => clearInterval(timer)
-  },[])
+    }, 21600000);
+    return () => clearInterval(timer);
+  }, []);
 
   let hari, waktu, matkul, ruang;
   switch (datetime.day) {
@@ -36,7 +54,7 @@ const JadwalMatkul = () => {
       hari = "Senin";
       matkul = ["Analisis dan Design Algoritma", "Bahasa Pemrograman Dasar"];
       waktu = ["10.40 - 12.30", "13.25 - 15.45"];
-      ruang = ["4.3.3", "Labkom"];
+      ruang = ["4.3.3", "Lab kom"];
       break;
     case "Tue":
       hari = "Selasa";
@@ -75,7 +93,7 @@ const JadwalMatkul = () => {
       <h1 className="mt-10 px-1 font-black text-secondary text-xl sm:text-2xl">
         JADWAL MATKUL
       </h1>
-      
+
       <div className="bg-primary  rounded-xl mt-2 p-4 shadow-xl sm:text-start">
         {!hari || (!matkul && !waktu && !ruang) ? (
           <>
